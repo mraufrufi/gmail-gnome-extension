@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.gmail-indicator" path="/org/gnome/shell/extensions/gmail-indicator/">
+
+    <!-- Account -->
+    <key name="client-id" type="s">
+      <default>''</default>
+      <summary>Google OAuth client ID</summary>
+    </key>
+    <key name="client-secret" type="s">
+      <default>''</default>
+      <summary>Google OAuth client secret (Desktop app type)</summary>
+    </key>
+    <key name="account-email" type="s">
+      <default>''</default>
+      <summary>Signed-in account address</summary>
+    </key>
+
+    <!-- Mailbox behaviour -->
+    <key name="refresh-interval" type="i">
+      <range min="1" max="60"/>
+      <default>5</default>
+      <summary>Minutes between unread-count checks</summary>
+    </key>
+    <key name="max-messages" type="i">
+      <range min="3" max="30"/>
+      <default>10</default>
+      <summary>Messages shown in the popup</summary>
+    </key>
+    <key name="default-tab" type="s">
+      <choices>
+        <choice value="unread"/>
+        <choice value="all"/>
+        <choice value="starred"/>
+      </choices>
+      <default>'unread'</default>
+      <summary>Tab shown first</summary>
+    </key>
+    <key name="show-starred-tab" type="b">
+      <default>true</default>
+      <summary>Show the Starred tab</summary>
+    </key>
+    <key name="exclude-promotions" type="b">
+      <default>false</default>
+      <summary>Hide Promotions and Social categories from the list</summary>
+    </key>
+    <key name="mark-read-on-open" type="b">
+      <default>true</default>
+      <summary>Mark a message as read when it is opened in the popup</summary>
+    </key>
+    <key name="refresh-on-open" type="b">
+      <default>true</default>
+      <summary>Reload the list every time the popup opens</summary>
+    </key>
+    <key name="confirm-delete" type="b">
+      <default>true</default>
+      <summary>Ask for a second click before moving a message to Trash</summary>
+    </key>
+    <key name="time-format" type="s">
+      <choices>
+        <choice value="24h"/>
+        <choice value="12h"/>
+      </choices>
+      <default>'24h'</default>
+      <summary>Clock format used for message times</summary>
+    </key>
+
+    <!-- Panel button -->
+    <key name="panel-position" type="s">
+      <choices>
+        <choice value="left"/>
+        <choice value="center"/>
+        <choice value="right"/>
+      </choices>
+      <default>'right'</default>
+      <summary>Which part of the top bar holds the button</summary>
+    </key>
+    <key name="badge-style" type="s">
+      <choices>
+        <choice value="count"/>
+        <choice value="dot"/>
+        <choice value="hidden"/>
+      </choices>
+      <default>'count'</default>
+      <summary>How unread mail is shown next to the icon</summary>
+    </key>
+    <key name="hide-when-zero" type="b">
+      <default>false</default>
+      <summary>Hide the whole button when there is no unread mail</summary>
+    </key>
+
+    <!-- Popup layout -->
+    <key name="popup-width" type="i">
+      <range min="320" max="600"/>
+      <default>400</default>
+      <summary>Popup width in pixels</summary>
+    </key>
+    <key name="popup-max-height" type="i">
+      <range min="200" max="700"/>
+      <default>340</default>
+      <summary>Maximum height of the message list in pixels</summary>
+    </key>
+    <key name="corner-radius" type="i">
+      <range min="0" max="28"/>
+      <default>16</default>
+      <summary>Popup corner radius in pixels</summary>
+    </key>
+    <key name="font-size" type="i">
+      <range min="10" max="18"/>
+      <default>13</default>
+      <summary>Base font size in the popup</summary>
+    </key>
+    <key name="compact-rows" type="b">
+      <default>false</default>
+      <summary>Use tighter spacing between messages</summary>
+    </key>
+    <key name="show-snippet" type="b">
+      <default>true</default>
+      <summary>Show a preview line under each subject</summary>
+    </key>
+    <key name="show-avatars" type="b">
+      <default>true</default>
+      <summary>Show a coloured avatar for each sender</summary>
+    </key>
+    <key name="show-search" type="b">
+      <default>true</default>
+      <summary>Show a search box in the popup</summary>
+    </key>
+    <key name="show-compose" type="b">
+      <default>true</default>
+      <summary>Show the Compose button</summary>
+    </key>
+    <key name="show-open-gmail" type="b">
+      <default>true</default>
+      <summary>Show the Open Gmail button</summary>
+    </key>
+    <key name="show-mark-all" type="b">
+      <default>true</default>
+      <summary>Show the Mark all read button</summary>
+    </key>
+
+    <!-- Notifications -->
+    <key name="notify-new-mail" type="b">
+      <default>true</default>
+      <summary>Show a notification when new unread mail arrives</summary>
+    </key>
+    <key name="notify-preview" type="b">
+      <default>true</default>
+      <summary>Include sender and subject in the notification</summary>
+    </key>
+    <key name="notify-sound" type="b">
+      <default>false</default>
+      <summary>Play a sound with the notification</summary>
+    </key>
+    <key name="quiet-hours-enabled" type="b">
+      <default>false</default>
+      <summary>Silence notifications during quiet hours</summary>
+    </key>
+    <key name="quiet-start" type="i">
+      <range min="0" max="23"/>
+      <default>22</default>
+      <summary>Quiet hours start (hour of day)</summary>
+    </key>
+    <key name="quiet-end" type="i">
+      <range min="0" max="23"/>
+      <default>7</default>
+      <summary>Quiet hours end (hour of day)</summary>
+    </key>
+
+    <!-- Colours -->
+    <key name="color-background" type="s">
+      <default>'#2b2b2f'</default>
+      <summary>Popup background colour</summary>
+    </key>
+    <key name="color-text" type="s">
+      <default>'#f2f2f2'</default>
+      <summary>Popup text colour</summary>
+    </key>
+    <key name="color-accent" type="s">
+      <default>'#78aeed'</default>
+      <summary>Accent colour (active tab, primary buttons, unread dot)</summary>
+    </key>
+    <key name="color-badge" type="s">
+      <default>'#c01c28'</default>
+      <summary>Unread badge colour</summary>
+    </key>
+    <key name="background-opacity" type="i">
+      <range min="50" max="100"/>
+      <default>100</default>
+      <summary>Popup background opacity in percent</summary>
+    </key>
+    <key name="color-preset" type="s">
+      <default>'dark'</default>
+      <summary>Last colour preset applied</summary>
+    </key>
+  </schema>
+</schemalist>

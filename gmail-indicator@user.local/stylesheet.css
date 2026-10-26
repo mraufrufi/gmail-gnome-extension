@@ -1,0 +1,66 @@
+/* Base look. Colours, sizes and radii are overridden at runtime by the generated theme.css. */
+.gmail-badge {
+  background-color: #c01c28; border-radius: 9px;
+  padding: 0 5px; margin-left: 6px; height: 18px; min-width: 18px;
+}
+.gmail-badge-label { color: #ffffff; font-size: 11px; font-weight: bold; padding: 0; }
+.gmail-badge-dot { padding: 0; min-width: 8px; width: 8px; height: 8px; border-radius: 4px; margin-left: 3px; margin-top: -8px; }
+
+.gmail-menu-item { padding: 0; }
+.gmail-menu-content { padding: 0; }
+.gmail-popup { width: 400px; color: #f2f2f2; background-color: #2b2b2f; border-radius: 16px; }
+
+/* header */
+.gmail-header { padding: 14px 8px 8px 14px; spacing: 10px; }
+.gmail-title { font-size: 15px; font-weight: bold; }
+.gmail-sub { font-size: 12px; color: #d0d0d8; }
+.gmail-avatar { width: 38px; height: 38px; border-radius: 19px; color: #0b0b0c; font-weight: bold; }
+.gmail-avatar-sm { width: 32px; height: 32px; border-radius: 16px; color: #0b0b0c; font-weight: bold; font-size: 13px; }
+.gmail-icon-button { width: 34px; height: 34px; border-radius: 17px; padding: 4px; }
+.gmail-icon-button:hover, .gmail-icon-button:focus { background-color: rgba(255,255,255,0.12); }
+
+/* search */
+.gmail-search-wrap { padding: 0 14px 8px 14px; }
+.gmail-search { height: 34px; border-radius: 17px; padding: 0 12px; border-width: 0; background-color: rgba(255,255,255,0.08); color: #f2f2f2; spacing: 8px; }
+.gmail-search:focus { background-color: rgba(255,255,255,0.14); }
+.gmail-search-icon { icon-size: 16px; }
+
+/* tabs */
+.gmail-tabs { padding: 0 14px 10px 14px; spacing: 6px; }
+.gmail-pill { height: 32px; padding: 0 12px; border-radius: 16px; background-color: rgba(255,255,255,0.08); color: #f2f2f2; font-size: 13px; font-weight: bold; }
+.gmail-pill:hover, .gmail-pill:focus { background-color: rgba(255,255,255,0.16); }
+.gmail-pill-active, .gmail-pill-active:hover, .gmail-pill-active:focus { background-color: #78aeed; color: #0b0b0c; }
+
+/* list */
+.gmail-scroll { max-height: 340px; border-top: 1px solid rgba(255,255,255,0.12); }
+.gmail-row { padding: 10px 14px; }
+.gmail-row:hover, .gmail-row:focus { background-color: rgba(255,255,255,0.08); }
+.gmail-row-box { spacing: 10px; }
+.gmail-dot, .gmail-dot-empty { width: 8px; height: 8px; border-radius: 4px; margin-top: 6px; }
+.gmail-dot { background-color: #78aeed; }
+.gmail-from { font-size: 13px; }
+.gmail-subject { font-size: 13px; margin-top: 1px; }
+.gmail-snippet { font-size: 12px; color: #d0d0d8; margin-top: 1px; }
+.gmail-time { font-size: 12px; color: #d0d0d8; }
+.gmail-bold { font-weight: bold; }
+.gmail-row-actions { margin: 6px 8px 0 0; padding: 0 2px; border-radius: 16px; spacing: 0; background-color: #38383d; }
+.gmail-action { width: 28px; height: 28px; border-radius: 14px; padding: 3px; }
+.gmail-action:hover, .gmail-action:focus { background-color: rgba(255,255,255,0.16); }
+
+.gmail-status { padding: 30px 14px; text-align: center; color: #b9b9c2; spacing: 12px; }
+.gmail-empty-icon { icon-size: 40px; opacity: 150; }
+
+/* footer */
+.gmail-footer { padding: 10px 14px 14px 14px; spacing: 8px; border-top: 1px solid rgba(255,255,255,0.12); }
+.gmail-btn { height: 34px; border-radius: 17px; background-color: rgba(255,255,255,0.08); color: #f2f2f2; font-size: 13px; font-weight: bold; padding: 0 12px; }
+.gmail-btn:hover, .gmail-btn:focus { background-color: rgba(255,255,255,0.16); }
+.gmail-btn-primary, .gmail-btn-primary:hover, .gmail-btn-primary:focus { background-color: #78aeed; color: #0b0b0c; }
+
+/* reader */
+.gmail-read-top { padding: 8px; spacing: 6px; border-bottom: 1px solid rgba(255,255,255,0.12); }
+.gmail-read-body { padding: 14px 14px 0 14px; spacing: 12px; }
+.gmail-read-subject { font-size: 17px; font-weight: bold; }
+.gmail-read-text { padding: 12px; border-radius: 12px; background-color: rgba(255,255,255,0.07); font-size: 13px; }
+.gmail-read-scroll { height: 240px; }
+
+.gmail-delete-armed, .gmail-delete-armed:hover, .gmail-delete-armed:focus { background-color: #c01c28; color: #ffffff; width: 64px; font-size: 12px; font-weight: bold; }

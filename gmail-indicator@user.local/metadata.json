@@ -1,0 +1,11 @@
+{
+  "uuid": "gmail-indicator@user.local",
+  "name": "Gmail Indicator",
+  "description": "Unread count in the top bar, with a popup to search, read, archive and delete Gmail messages. Created by Invoxity (invoxity.com).",
+  "shell-version": [
+    "50"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.gmail-indicator",
+  "version": 5,
+  "url": "https://invoxity.com"
+}
